@@ -19,5 +19,11 @@
 > Vous retrouverez cet id lors de la création, une réponse est retournée précisant l'url du vol crée.
   
   ## SOAP Server
+  
+  - Dans le dossier racine, un fichier request.xml est présent, il contient la requête SOAP à executer
+  > De base, la requête va rechercher un hôtel avec le nom " Kyriad "
+  
+  - Pour executer cette requete contenu dans le fichier, il faut taper la commande suivante :
+  `curl --header "content-type: text/xml" -d @request.xml http://localhost:8080/ws`
 
 `
