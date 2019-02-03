@@ -14,22 +14,9 @@
 > Cette commande ajoutera un vol Air France, en acutalisant la liste des vols, vous pouvez voir qu'un nouveau vol apparait.
 
 - Vous pouvez supprimer des vols en executant la commande suivante en remplacant l'id par l'id du vol : 
-`curl -XDELETE localhost:8080/api/flights/{id}`
+`curl -X DELETE localhost:8080/api/flights/{id}`
 
 > Vous retrouverez cet id lors de la création, une réponse est retournée précisant l'url du vol crée.
-> Par exemple lors de la création du vol Air France, une réponse de ce type a été retournée : 
-> `{
-  "brand" : "Air France",
-  "departure" : "Thursday 25th January at 6:00pm",
-  "arrival" : "Thursday 25th January at 10:00pm",
-  "_links" : {
-    "self" : {
-      "href" : "http://localhost:8080/api/flights/4"
-    },
-    "flight" : {
-      "href" : "http://localhost:8080/api/flights/4"
-    }
-  }
   
   ## SOAP Server
 
